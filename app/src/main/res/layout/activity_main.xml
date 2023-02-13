@@ -9,24 +9,22 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_weight="1"
         android:background="#D9D9D9"
         android:gravity="center"
-        >
+        android:padding="15dp">
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="오늘의 운세"
             android:layout_gravity="center"
             android:gravity="center"
-            />
+            android:text="오늘의 운세"
+            android:textSize="15sp" />
     </LinearLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_weight="4"
         android:background="#B24343">
 
         <TextView
@@ -34,14 +32,16 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:gravity="center"
-            android:text="오늘의 뽑기운은 어떨까?"
-            android:textSize="30sp" />
+            android:text="\n\n\n\n오늘의 운을 시험해보세요!\n\n\n\n"
+            android:textColor="#fff"
+            android:textSize="25sp" />
     </LinearLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_weight="5"
+        android:layout_gravity="center"
+        android:gravity="center"
         android:orientation="vertical"
         android:padding="30dp">
 
@@ -49,35 +49,45 @@
             android:id="@+id/btn_lotto"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="10dp"
-            android:text="로또 뽑기"
+            android:layout_marginBottom="15dp"
+            android:backgroundTint="#D9D9D9"
+            android:padding="15dp"
+            android:text="오늘의 운 뽑기"
+            android:textColor="@color/black"
             android:textSize="20sp" />
 
         <Button
             android:id="@+id/btn_5pick"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="10dp"
-            android:text="5지선다"
+            android:layout_marginBottom="15dp"
+            android:backgroundTint="#D9D9D9"
+            android:padding="15dp"
+            android:text="자랑하기"
+            android:textColor="@color/black"
             android:textSize="20sp" />
 
         <Button
             android:id="@+id/btn_update"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="업데이트 중.."
+            android:layout_marginBottom="15dp"
+            android:backgroundTint="#D9D9D9"
+            android:padding="15dp"
+            android:text="개발자와 대화"
+            android:textColor="@color/black"
             android:textSize="20sp" />
     </LinearLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_weight="1"
+        android:layout_height="match_parent"
+        android:layout_gravity="bottom"
         android:background="#D9D9D9">
 
         <TextView
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
             android:text="Admob 광고입니다~" />
 
     </LinearLayout>
